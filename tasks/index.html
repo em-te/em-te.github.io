@@ -1,5 +1,150 @@
 <!doctype html>
 <html>
-<head><meta charset="UTF-8"></head>
-<body></body>
+<head>
+  <meta charset="UTF-8">
+  <meta name=viewport content="width=device-width">
+  <title>Task Management System</title>
+  <style type="text/css">
+html, body {margin: 0; padding: 0}
+body {background: #fff; color: #000; font: 14pt/1.5em Times New Roman}
+h1, header, footer {margin: 0; padding: 0; font: 20pt Cooper Black}
+h2 {margin: 0.5em 0; padding: 0; font: 18pt Cooper Black}
+header, footer {background: #359; color: #fff; margin: 0; padding: 1em 3%}
+nav {float: right}
+nav > a {text-decoration: none; color: #ddf; font-size: 20pt; margin:0 0.5em}
+nav > a:hover {color: #fff; text-shadow: 2px 2px 10px #000}
+footer {font-size: 10pt}
+main {padding: 1em; margin-left: 10%}
+main img {max-width: 100%; height: inherit}
+.features {border-collapse: collapse; max-width: 100%}
+.features, .features tr > * {border: 1px solid}
+.features tr > * {padding: 0.1em 0.5em}
+
+.features tr:nth-child(2n) > td {background: rgba(127,127,127,0.15)}
+.features td ~ td {text-align: center}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#features">&#x1F4D6;</a>
+      <a href="#install">&#x1F4E5;</a>
+      <a href="#feedback">&#x260E;&#xFE0F;</a>
+    </nav>
+    <h1>Task Management System</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Overview</h2>
+      <p>Task Management System (TMS) is a browser extension for managing your Microsoft Tasks. 
+      TMS stores your tasks locally on your computer, so that you can view them without an 
+      Internet connection.
+    </section>
+
+    <section>
+      <h2>System Requirements</h2>
+      <p>You will need the following to run Task Management System:
+      <ul>
+        <li>An Internet connection (not all the time).
+        <li>A modern web browser like 
+        <a href="https://www.mozilla.org">Firefox</a>,
+        <a href="https://www.google.com/chrome">Chrome</a> or
+        <a href="https://www.microsoft.com/edge">Edge</a>.
+        <li>A user account with one of Microsoft's online services 
+        (<a href="https://www.hotmail.com/">Hotmail</a>, 
+        <a href="https://www.office.com/">Office 365</a>, 
+        <a href="https://www.outlook.com/">Outlook</a>).
+      </ul>
+    </section>
+
+    <section>
+      <h2>Features<a name=features></a></h2>
+      <p>Task Management System (TMS) is not a replacement for the actual 
+      <a href="https://to-do.live.com/tasks/">Microsoft Tasks</a> app, because it
+      does not support all the features that the Microsoft Tasks app has.
+      
+      <p>Here is a comparison of TMS's features:
+
+      <table class=features cellspacing=0>
+        <tr><th>Operation<th>Task Management System<th>Microsoft Tasks app
+        <tr><td>View your task while offline (without an Internet connection)<td>&check;<td>
+        <tr><td>View your tasks quickly by not needing to login to the server each time<td>&check;<td>
+        <tr><td>Compact multi-column view<td>&check;<td>
+        <tr><td>Efficient date and time picker<td>&check;<td>
+        <tr><td>Set the due date and a reminder date at the same time<td>&check;<td>
+        <tr><td>Set tasks as complete with one click<td>&check;<td>&check;
+        <tr><td>Change the task's subject<td>&check;<td>&check;
+        <tr><td>Change the task's due date<td>&check;<td>&check;
+        <tr><td>Change the priority of tasks<td>&check;<td>&check;
+        <tr><td>Move the task to another folder<td>&check;<td>&check;
+        <tr><td>View the categories of each task<td>&check;<td>&check;
+        <tr><td>Change the categories of each task<td><td>&check;
+        <tr><td>View the task's notes<td><td>&check;
+        <tr><td>View the task's subtasks<td><td>&check;
+        <tr><td>Create recurring tasks<td><td>&check;
+        <tr><td>View previously completed tasks<td><td>&check;
+      </table>
+    </section>
+
+    <section>
+      <h2>Operation</h2>
+
+      <p>The first time you launch the app you will need to click &quot;Login&quot; which will 
+      take you to the Microsoft Authorization page where Microsoft will ask you whether you
+      allow this app to access your Microsoft Tasks data.
+
+      <p>Task Management System (TMS) will not update your tasks or folders unless you click on 
+      the <kbd>refresh</kbd> icons at the top.
+      
+      <p>Click on the folder on the left to view the tasks in the center.
+      
+      <p>Click on the task in the middle to edit the task on the right.
+    </section>
+
+    <section>
+      <h2>User Interface</h2>
+      
+      <p><img src=user_interface.png width=1054 height=670>
+    </section>
+
+    <section>
+      <h2>Install<a name=install></a></h2>
+
+      <p>Time Management System (TMS) can be installed from these sources:
+      <ul> 
+        <li><a href="https://addons.mozilla.org/en-US/firefox/addon/task/?src=external-gitpage">Mozilla Firefox extensions</a>
+        <li><a href="https://chrome.google.com/webstore/detail/task-management-system/njlkfhoiajahhkbllfkgppndfdadimcc?utm_source=gitpage">Google Chrome extensions</a>
+        <li><a href="https://microsoftedge.microsoft.com/addons/detail/hcjnngppolooccblkcjeabkghbieghoe">Microsoft Edge extensions</a>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Time Savers</h2>
+
+      <p><ul>
+        <li>To quickly click on the <kbd>Save</kbd> button after choosing a date or time, simply
+        double-click on the date or time.
+
+        <li>The date and time picker can be navigated using the keyboard by using the 4 arrow 
+        keys. To get to the date and time picker while you are typing a new task, press the 
+        <kbd>tab</kbd> key multiple times until the keyboard focus reaches the date and time picker.
+      </ul>
+    </section>
+
+    <section>
+      <h2>Disclaimer</h2>
+      <p>This software is governed by the <a href="https://opensource.org/licenses/bsd-license.php">Simplified BSD License</a>.
+      <p>This software is provided by the copyright holders and contributors &quot;as is&quot; and any express or implied warranties, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose are disclaimed. In no event shall the copyright holder or contributors be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of this software, even if advised of the possibility of such damage.
+    </section>
+
+    <section>
+      <h2>Feedback<a name=feedback></a></h2>
+      <p>Task Management System is managed on Github. Feel free to post any <a href="https://github.com/em-te/task-management-system/issues">issues</a> there.
+    </section>
+  </main>
+
+  <footer>Copyright &copy; 2020</footer>
+</body>
 </html>
